@@ -1,0 +1,159 @@
+
+*{
+   margin: 0rem;
+   padding: 0rem;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: teal;
+    color: #fff;
+}
+
+
+
+.grid-container{
+    position: relative;
+    width: 304px;
+    height: 580px;
+    border: none;
+    background: rgb(7, 7, 46);
+    margin: auto;
+    margin-top: 3.125rem;
+    border-radius: .625rem;
+    box-shadow: 10px 5px 5px rgb(36, 22, 22);
+}
+
+
+::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    position:absolute;
+    font-size: 3rem;
+    top: 70px;
+    box-shadow: inset;
+
+}
+
+.eval{
+    position:absolute;
+    left: 200px;
+    top: 100px;
+}
+
+
+input{
+    background:rgb(38, 38, 107);
+    box-shadow: -8px -5px 0  #000 ;
+    color: #fff;
+    font-size: 25px;
+    border-radius: .625rem;
+    position: relative;
+    height: 14rem;
+    outline: none;
+    width: 17rem;
+    left: 17.5px;
+    top: 20px;
+    border: none;
+}
+
+
+.grid-templete-item{
+    background: rgb(2, 2, 77);
+}
+
+.grid-item-1,
+.grid-item-2,
+.grid-item-3,
+.grid-item-5,
+.grid-item-6,
+.grid-item-7,
+.grid-item-9,
+.grid-item-10,
+.grid-item-11,
+.grid-item-14
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 10px 10px #000;
+    font-size: 1.125rem;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    color: red;
+}
+
+
+.grid-item-4,
+.grid-item-8,
+.grid-item-12,
+.grid-item-13,
+.grid-item-15,
+.grid-item-16,
+.grid-item-17,
+.grid-item-18{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 3px 3px 5px #000;
+    font-size: 1.125rem;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    color: yellow;
+}
+
+.grid-item-1:hover,
+.grid-item-2:hover,
+.grid-item-3:hover,
+.grid-item-5:hover,
+.grid-item-6:hover,
+.grid-item-7:hover,
+.grid-item-9:hover,
+.grid-item-10:hover,
+.grid-item-11:hover,
+.grid-item-14:hover
+{
+    transition: .1s;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.grid-item-4:hover,
+.grid-item-8:hover,
+.grid-item-12:hover,
+.grid-item-13:hover,
+.grid-item-15:hover,
+.grid-item-16:hover,
+.grid-item-17:hover,
+.grid-item-18:hover
+    {
+        transition: .1s;
+        color: greenyellow;
+        cursor: pointer;
+    }  
+
+
+
+
+.button-container{
+    grid-template-columns:repeat(4, auto);
+    grid-template-rows:repeat(5, auto);
+    border-radius:0 0 .75rem .75rem;
+    position: absolute;
+    width: 18.75rem;
+    display: grid;
+    height: 310px;
+    margin: auto;
+    top: 263px;  
+    gap: .125rem; 
+}
+
+.grid-item-18{
+    grid-column: span 2;
+}
+
+.grid-item-16{
+    grid-row: span 2;
+}
+
+
+
